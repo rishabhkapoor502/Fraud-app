@@ -1,0 +1,116 @@
+{
+  "trained_at": "2026-10-24T14:33:05.792315+00:00",
+  "feature_columns": [
+    "Time",
+    "V1",
+    "V2",
+    "V3",
+    "V4",
+    "V5",
+    "V6",
+    "V7",
+    "V8",
+    "V9",
+    "V10",
+    "V11",
+    "V12",
+    "V13",
+    "V14",
+    "V15",
+    "V16",
+    "V17",
+    "V18",
+    "V19",
+    "V20",
+    "V21",
+    "V22",
+    "V23",
+    "V24",
+    "V25",
+    "V26",
+    "V27",
+    "V28",
+    "Amount"
+  ],
+  "threshold": 0.9994950294494629,
+  "threshold_selection": {
+    "threshold": 0.9994950294494629,
+    "validation_f1": 0.8251748251748252,
+    "validation_precision": 0.8194444444444444,
+    "validation_recall": 0.8309859154929577
+  },
+  "split_summary": {
+    "train": {
+      "rows": 198608,
+      "legitimate": 198277,
+      "fraud": 331,
+      "fraud_rate": 0.0016665995327479256
+    },
+    "val": {
+      "rows": 42559,
+      "legitimate": 42488,
+      "fraud": 71,
+      "fraud_rate": 0.0016682722808336662
+    },
+    "test": {
+      "rows": 42559,
+      "legitimate": 42488,
+      "fraud": 71,
+      "fraud_rate": 0.0016682722808336662
+    }
+  },
+  "class_weights": {
+    "0": 0.5008346908617742,
+    "1": 300.012084592145
+  },
+  "training_config": {
+    "epochs_requested": 30,
+    "epochs_run": 18,
+    "batch_size": 2048,
+    "learning_rate": 0.001,
+    "architecture": "dense-64-32-16-1"
+  },
+  "validation_metrics": {
+    "threshold": 0.9994950294494629,
+    "precision": 0.8194444444444444,
+    "recall": 0.8309859154929577,
+    "f1_score": 0.8251748251748252,
+    "roc_auc": 0.9627087747725289,
+    "pr_auc": 0.7063088796982698,
+    "accuracy": 0.9994125801828051,
+    "confusion_matrix": {
+      "true_negative": 42475,
+      "false_positive": 13,
+      "false_negative": 12,
+      "true_positive": 59
+    },
+    "support": {
+      "legitimate": 42488,
+      "fraud": 71
+    }
+  },
+  "test_metrics": {
+    "threshold": 0.9994950294494629,
+    "precision": 0.8666666666666667,
+    "recall": 0.7323943661971831,
+    "f1_score": 0.7938931297709924,
+    "roc_auc": 0.960551081863048,
+    "pr_auc": 0.6841318652695684,
+    "accuracy": 0.9993655865974295,
+    "confusion_matrix": {
+      "true_negative": 42480,
+      "false_positive": 8,
+      "false_negative": 19,
+      "true_positive": 52
+    },
+    "support": {
+      "legitimate": 42488,
+      "fraud": 71
+    }
+  },
+  "notes": [
+    "Threshold was selected on the validation set only.",
+    "Test metrics were computed once after threshold selection.",
+    "Class was never used as an input feature."
+  ]
+}
